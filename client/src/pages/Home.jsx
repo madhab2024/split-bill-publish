@@ -25,7 +25,7 @@ export default function Home() {
                     <Sparkles size={16} strokeWidth={2} />
                     Free Android App
                 </div>
-                <h1>Split Bills,<br />Not Friendships</h1>
+                <h1>Split Bills <br/>Not Friendships</h1>
                 <p>
                     The smartest way to split expenses with friends, family, and roommates.
                     Track, settle, and stay stress-free.
