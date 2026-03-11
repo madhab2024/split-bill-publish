@@ -23,7 +23,7 @@ export default function Home() {
             <section className="hero">
                 <div className="hero-badge">
                     <Sparkles size={16} strokeWidth={2} />
-                    Free Android App madhab.
+                    Free Android App madhab mondal.
                 </div>
                 <h1>Split Bills <br/>Not Friendships</h1>
                 <p>
