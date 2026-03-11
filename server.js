@@ -44,14 +44,15 @@ app.post('/api/support', (req, res) => {
   }
 });
 
-// In production: serve the built React app
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client', 'dist')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
-  });
-}
+// In production: serve 
+// Serve React build
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
-app.listen(PORT, () => {
-  console.log(`🚀 Split Bill website running at http://localhost:${PORT}`);
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
+
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 Split Bill website running on port ${PORT}`);
 });

@@ -4,3 +4,9 @@ dist/
 .env
 .env.local
 .DS_Store
+support-messages.json
+hooks.json
+deploy.sh
+client/deploy.sh
+client/dist
+client/node_modules
